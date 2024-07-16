@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    top: 0;
+    width: 100%;
+    background-color: cadetblue;
+}
+.signform{
+    padding: 20px;
+    margin: 0% 30% 0% 37%;
+    width: 25%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    animation:fade 2s forwards;   
+}
+@keyframes fade{
+    from{
+        margin-top: 3%;
+        opacity: 0;
+    }
+    to{
+        margin-top: 6%;
+    }
+}
+#head{
+    text-align: center;
+}
+.signform input{
+    width: 90%;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding:2px 10px 2px 10px;
+    border-radius: 5px;
+    margin:10px 0px 0px 0px;
+}
+.signform div{
+    padding-left: 10px;
+}
+.signform input:focus{
+    background-color: rgba(211, 211, 211, 0.452);
+}
+#btn{
+    background-color: rgba(95, 158, 160, 0.713);
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+#btn:hover{
+    background-color: cadetblue;
+}
+.signform p{
+    font-size: 12px;
+    margin-left: 10px;
+    color: red;
+}

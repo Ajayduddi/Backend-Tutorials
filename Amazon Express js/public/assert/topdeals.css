@@ -1,0 +1,43 @@
+#head{
+    text-align: center;
+    font-family: 'Lucida Sans',Verdana;
+    margin-bottom: 30px;
+}
+.TodayDeals{
+    overflow: hidden;
+    height: 100px;
+}
+.TodayDeals figure{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.TodayDeals figure img{
+    float: left;
+    height: 90%;
+    margin: 5px 15px 15px 15px;
+}
+.deals{
+    width:100%;
+}
+.deals ul{
+    list-style-type: none;
+    width:100%;
+    overflow:auto;
+    margin-left: 30px;
+}
+.deals ul li{
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+.deals ul li p{
+    background-color: chartreuse;
+    padding: 5px;
+    display: inline;
+}
+
+
+

@@ -1,0 +1,99 @@
+body,html{
+    margin:0 auto;
+    width:100%;
+    background-position: center;
+    background-size: contain;
+}
+.head{
+    height:60px;
+    width: 100%;
+    position: sticky;
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+    
+}
+header li{
+    list-style-type:none;   
+    float: left;
+}
+#login{
+    font-size: 21px; 
+    color: black ; 
+    padding: 10px 5px 10px 5px; 
+    background-color: rgb(243, 182, 27);
+}
+#cart{
+    float: right; 
+    margin-right: 20px;
+    background-color: rgb(243, 182, 27);
+    padding:7px;
+    border-radius: 50%;
+}
+#cart:hover{
+    border:solid ;
+}
+#searchbox{
+    padding: 10px 0px 10px 0px;
+    margin-left: 300px;
+}
+.navbar{
+    background-color:rgba(0, 0, 0, 0.866);
+    color: white;
+    width: 100%;
+    margin-top:-5px;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+}
+#list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#list li{
+    float: left;
+}
+#list li a{
+    display: block; 
+    padding:15px 20px;
+    text-decoration: none;
+    color: white;
+}
+#list a:hover:not(.active){
+    background-color: black;
+    color: white;
+}
+.login{
+    float: right;
+    margin-right: 10px;
+}
+.foot{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.866);
+    bottom:0px;
+    color: rgba(240, 255, 255, 0.97);
+    text-align: center;
+    padding:20px 0px 10px 0px;
+    position:relative;
+}
+.foot ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+.foot li{
+    padding: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana;
+}
+.foot ul li a{
+    color: rgba(240, 255, 255, 0.853);
+    margin-top: 0px;
+    text-decoration: none;
+    margin: 5px;
+}
+.foot a:hover{
+    text-decoration: underline;
+}
+

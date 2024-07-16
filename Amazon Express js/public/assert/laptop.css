@@ -1,0 +1,49 @@
+#head{
+    text-align: center;
+    font-family: 'Lucida Sans',Verdana;
+    margin-bottom: 30px;
+}
+#about{
+    width: 100%;
+}
+#about img{
+    width:24.75%;
+}
+body img{
+    width: 100%;
+}
+.TodayDeals{
+    overflow: auto;
+    height: 250px;
+}
+.TodayDeals figure{
+    position: relative;
+    margin: 0 auto;
+    width: 200%;
+    height: 98%;
+    float: left;
+}
+.TodayDeals figure img{
+    float: left;
+    height: 99%;
+    width: 9.65%;
+    margin:5px;
+}
+.blockbuster{
+    width: 100%;
+}
+.blockbuster ul{
+    list-style-type: none;
+    width:100%;
+    overflow:auto;
+}
+.blockbuster ul li{
+    float: left;
+    width: 320px;
+    height: 340px;
+    margin:13px;
+}
+.blockbuster ul li img{
+    width:100%;
+    height: 100%;
+}

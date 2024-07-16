@@ -1,0 +1,73 @@
+body,html{
+    margin: 0;
+    width: 100%;
+
+}
+.slider{
+    overflow: hidden;
+    height: 540px;
+}
+.slider figure{
+    position: relative;
+    margin: 0 auto;
+    width: 500%;
+    height: 540px;
+    float: left;
+    animation: 10s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 20%;
+    height:100%;
+}
+@keyframes slider {
+    0%{
+        left:0;
+    }
+    20%{
+        left: 0;
+    }
+    23%{
+        left: -100%;
+    }
+    40%{
+        left: -100%;
+    }
+    43%{
+        left: -200%;
+    }
+    60%{
+        left: -200%;
+    }
+    63%{
+        left: -300%;
+    }
+    80%{
+        left: -300%;
+    }
+    83%{
+        left: -400%;
+    }
+    100%{
+        left: -400%;
+    }
+    
+}
+.blockbuster{
+    width: 100%;
+}
+.blockbuster ul{
+    list-style-type: none;
+    width:100%;
+    overflow:auto;
+}
+.blockbuster ul li{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin:13px;
+}
+.blockbuster ul li img{
+    width:100%;
+    height: 100%;
+}

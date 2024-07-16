@@ -1,0 +1,38 @@
+body,html{
+    margin: 0;
+}
+#form h1{
+    padding: 5px 20px 10px 20px;
+    margin:5px 20px 10px 20px;
+    font-family:sans-serif;
+}
+#form label{
+    padding: 5px 20px 5px 20px;
+    margin: 5px 20px 5px 20px;
+}
+#form label input{
+    padding: 5px 0px 5px 0px;
+    margin: 5px 20px 5px 40px;
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+}
+#form button{
+    width: 250px;
+    height: 30px;
+    margin: 5px 40px 10px 80px;
+    background-color:rgba(249, 190, 42, 0.801);
+    font-size: 15px;
+}
+#form p{
+    margin: 5px 40px 10px 40px;
+}
+#form p a:hover{
+    color: rgb(254, 115, 65);
+}
+#form button:hover{
+    background-color:rgb(249, 190, 42);
+}
+

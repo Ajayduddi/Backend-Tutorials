@@ -1,0 +1,34 @@
+{
+  "name": "02_express",
+  "version": "1.0.0",
+  "description": "Basics",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.mjs",
+    "tea": "nodemon ./src/tea.js",
+    "udemy": "nodemon ./src/udemy.js"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Ajay Duddi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
