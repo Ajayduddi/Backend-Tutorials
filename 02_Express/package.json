@@ -7,8 +7,7 @@
   "scripts": {
     "start": "nodemon ./src/app.mjs",
     "tea": "nodemon ./src/tea.js",
-    "udemy": "nodemon ./src/udemy.js",
-    "build": "rm -rf ./dist && mkdir -p ./dist/src && cp ./src/app.mjs ./dist/src/app.mjs && cp package.json ./dist/ && npm install --production --prefix ./dist/"
+    "udemy": "nodemon ./src/udemy.js"
   },
   "keywords": [
     "express"
