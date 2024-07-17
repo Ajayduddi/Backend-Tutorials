@@ -4,6 +4,7 @@ import productRouter from './products.mjs';
 import { users } from '../utilities/constants.mjs';
 import { body, matchedData, validationResult } from 'express-validator';
 import passport from 'passport';
+import '../strategies/google-strategy.mjs';
 import '../strategies/local-strategy.mjs';
 
 const router = Router();
@@ -39,6 +40,7 @@ router.get('/auth/status', (req, res) => {
     // maping sessionID from client to server session Store .  if session is present then get all session data
     req.sessionStore.get(req.sessionID, (err, sessionData) => {
         console.log(sessionData);
+        console.log(req.user);
         if (err) {
             console.log(err);
             res.status(500).json({ result: false, message: "Internal Server Error", data: '' });
@@ -47,7 +49,7 @@ router.get('/auth/status', (req, res) => {
             res.status(401).json({ result: false, message: "Not authenticated", data: '' });
         }
         else {
-            sessionData.user ? res.status(200).json({ result: true, message: "Logged In", data: sessionData.user }) : res.status(200).json({ result: true, message: "login success", data: req.user });
+            sessionData.user ? res.status(200).json({ result: true, message: "Logged In", data: sessionData.user }) : res.status(200).json({ result: true, message: "loged in ", data: req.user });
         }
         // else if (sessionData.user) {
         //     res.status(200).json({ result: true, message: "Logged In", data: sessionData.user, });
@@ -70,6 +72,17 @@ router.post("/login", [
         next();
     },
     passport.authenticate('local'),
+    (req, res) => {
+        console.log(req.sessionID);
+        console.log(req.session);
+        console.log(req.user);
+        res.status(200).json({ result: true, message: "Login Success", data: req.user });
+
+    });
+
+// use passport authentication && google-OAuth
+router.get('/login/google', passport.authenticate('google'));
+router.get('/login/google/callback', passport.authenticate('google', { failureRedirect: '/login/' }),
     (req, res) => {
         console.log(req.sessionID);
         console.log(req.session);
