@@ -27,7 +27,7 @@ passport.serializeUser((user, done) => {
  * 'done(null, user)' is to pass the user object back to Passport. The null parameter indicates that there were no errors.
  */
 passport.deserializeUser(async (id, done) => {
-    console.log('inside deserializeUser');
+    console.log('inside deserializeUser');  
     console.log(`id: ${id}`);
     // const finduser = users.find(u => u.id === id); // find user by id in the array of users
     const finduser = await user.findById(id); // find user by id in the mongoose database
@@ -59,6 +59,7 @@ passport.use(
             if ( !comparePassword(password, finduser.password) ) {
                 throw new Error("Invalid Credentials");
             }
+            console.log(finduser);
             done(null, finduser); // 
         } catch (error) {
             done(error,null);

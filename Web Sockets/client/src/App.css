@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.demo form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+  padding: 0.7rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 30rem;
+}
+
+form button{
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;;
+}
+
+table tr:nth-child(even){
+  background-color: rgba(128, 128, 128, 0.173);
+}
+
+table tr:hover{
+  background-color: rgba(128, 128, 128, 0.537);
+}
+
+table th{
+  background-color: black;
+}
+
+table th, table td{
+  padding: 0.5rem;
+  width: 10rem;
+}
