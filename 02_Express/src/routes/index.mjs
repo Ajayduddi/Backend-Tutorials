@@ -60,6 +60,10 @@ router.get('/auth/status', (req, res) => {
 
 
 // use passport authentication && passport session cookie
+/*
+ * When using Passport with strategies like passport-local or passport-google, once a user is authenticated and a session is established, 
+ * you don't need to use passport.authenticate() for each route.
+ */
 router.post("/login", [
     body("email").isEmail().withMessage("email is invalid").notEmpty().withMessage("email is required"),
     body("password").notEmpty().withMessage("password is required"),
